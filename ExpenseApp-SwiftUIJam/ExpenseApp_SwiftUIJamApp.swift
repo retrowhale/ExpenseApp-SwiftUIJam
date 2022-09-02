@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct ExpenseApp_SwiftUIJamApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView(transactions: Transaction(type: "", description: "", amount: 0.0))
+                
+            }
         }
     }
 }

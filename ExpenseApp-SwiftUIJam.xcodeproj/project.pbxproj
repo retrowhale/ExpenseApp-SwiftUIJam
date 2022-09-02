@@ -11,6 +11,8 @@
 		343C71262735BE9D00880A39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343C71252735BE9D00880A39 /* ContentView.swift */; };
 		343C71282735BE9F00880A39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 343C71272735BE9F00880A39 /* Assets.xcassets */; };
 		343C712B2735BE9F00880A39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 343C712A2735BE9F00880A39 /* Preview Assets.xcassets */; };
+		343C71372735F11E00880A39 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343C71362735F11E00880A39 /* AddView.swift */; };
+		349736A6273870960087F885 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349736A5273870960087F885 /* Transactions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		343C71252735BE9D00880A39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		343C71272735BE9F00880A39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		343C712A2735BE9F00880A39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		343C71362735F11E00880A39 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		349736A5273870960087F885 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				343C71232735BE9D00880A39 /* ExpenseApp_SwiftUIJamApp.swift */,
-				343C71252735BE9D00880A39 /* ContentView.swift */,
+				343C71322735D7F800880A39 /* Models */,
+				343C71312735D7A400880A39 /* Views */,
+				343C71332735D7FF00880A39 /* ViewModel */,
 				343C71272735BE9F00880A39 /* Assets.xcassets */,
 				343C71292735BE9F00880A39 /* Preview Content */,
 			);
@@ -65,6 +71,30 @@
 				343C712A2735BE9F00880A39 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		343C71312735D7A400880A39 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				343C71252735BE9D00880A39 /* ContentView.swift */,
+				343C71362735F11E00880A39 /* AddView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		343C71322735D7F800880A39 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				349736A5273870960087F885 /* Transactions.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		343C71332735D7FF00880A39 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +167,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				349736A6273870960087F885 /* Transactions.swift in Sources */,
+				343C71372735F11E00880A39 /* AddView.swift in Sources */,
 				343C71262735BE9D00880A39 /* ContentView.swift in Sources */,
 				343C71242735BE9D00880A39 /* ExpenseApp_SwiftUIJamApp.swift in Sources */,
 			);
@@ -266,10 +298,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ExpenseApp-SwiftUIJam/Preview Content\"";
-				DEVELOPMENT_TEAM = 7DT9R875YA;
+				DEVELOPMENT_TEAM = D6L69DDKK8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -284,6 +317,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.retrowhale.ExpenseApp-SwiftUIJam";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -295,10 +329,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ExpenseApp-SwiftUIJam/Preview Content\"";
-				DEVELOPMENT_TEAM = 7DT9R875YA;
+				DEVELOPMENT_TEAM = D6L69DDKK8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -313,6 +348,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.retrowhale.ExpenseApp-SwiftUIJam";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
